@@ -1,0 +1,22 @@
+/* ==========================================================================
+   CTA FINAL
+   ========================================================================== */
+.final{
+  position:relative;overflow:hidden;text-align:center;display:grid;justify-items:center;gap:22px;
+  padding:clamp(44px,7vw,88px) clamp(20px,5vw,64px);border-radius:32px;border:1px solid rgba(233,196,106,.3);
+  background:radial-gradient(90% 120% at 50% 0%,rgba(255,106,0,.35),transparent 60%),radial-gradient(70% 90% at 100% 100%,rgba(255,40,10,.3),transparent 60%),#0b0b0d;
+}
+.final h2{font-size:clamp(2rem,4.8vw,3.5rem);font-weight:800;max-width:18ch}
+.final .lead{margin-inline:auto}
+.final .mark{width:78px;height:auto;filter:drop-shadow(0 12px 30px rgba(255,106,0,.55))}
+.final .arc{right:0;bottom:0;width:min(380px,55%);transform:rotate(180deg);transform-origin:center}
+.final > *{position:relative}
+.micro{font-size:.82rem;color:#8a8580}
+
+@media (max-width:640px){
+  .final{gap:16px;padding:34px 20px;border-radius:22px}
+  .final .mark{width:58px}
+  .final h2{font-size:clamp(1.55rem,6.8vw,2rem)}
+  .final .btn{width:100%}
+  .micro{font-size:.78rem}
+}

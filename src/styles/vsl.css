@@ -1,0 +1,37 @@
+/* ==========================================================================
+   VSL (Video Sales Letter — 2ª dobra)
+   ========================================================================== */
+.vsl-sec{padding-top:clamp(32px,5vw,56px)}
+.vsl-shell{max-width:920px;margin-inline:auto}
+.vsl-frame{
+  position:relative;width:100%;aspect-ratio:16/9;overflow:hidden;
+  border-radius:var(--r-lg);border:1px solid rgba(255,122,26,.35);
+  background:radial-gradient(110% 100% at 50% 0%,rgba(255,106,0,.18),#0c0c0f 65%);
+  box-shadow:0 36px 90px -40px rgba(255,106,0,.55),0 0 0 1px rgba(255,255,255,.04);
+}
+.vsl-media{position:absolute;inset:0;width:100%;height:100%;border:0;display:block;background:#000}
+.vsl-placeholder{
+  position:absolute;inset:0;display:grid;place-content:center;justify-items:center;
+  gap:12px;padding:24px;text-align:center;
+}
+.vsl-play{
+  width:72px;height:72px;border-radius:50%;display:grid;place-items:center;
+  background:var(--grad-btn);color:var(--ink);
+  box-shadow:0 16px 36px -10px rgba(255,106,0,.75);
+}
+.vsl-play svg{width:26px;height:26px;fill:currentColor;margin-left:3px}
+.vsl-hint{font:600 1.02rem var(--font-display);color:var(--fg)}
+.vsl-placeholder small{font-size:.82rem;color:var(--muted);max-width:42ch}
+.vsl-cta{display:flex;justify-content:center;margin-top:30px}
+
+@media (max-width:640px){
+  .vsl-sec{padding-top:24px}
+  .vsl-frame{border-radius:16px}
+  .vsl-placeholder{gap:8px;padding:16px}
+  .vsl-play{width:54px;height:54px}
+  .vsl-play svg{width:20px;height:20px}
+  .vsl-hint{font-size:.92rem}
+  .vsl-placeholder small{font-size:.74rem}
+  .vsl-cta{margin-top:20px}
+  .vsl-cta .btn{width:100%}
+}

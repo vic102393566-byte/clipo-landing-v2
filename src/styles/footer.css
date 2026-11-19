@@ -1,0 +1,19 @@
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+footer{border-top:1px solid var(--line);padding-block:44px 120px}
+.foot{display:flex;flex-wrap:wrap;gap:28px;justify-content:space-between;align-items:center}
+.foot img{height:32px;width:auto;display:block}
+.foot p{color:var(--muted);font-size:.9rem;margin-top:10px}
+.foot ul{display:flex;flex-wrap:wrap;gap:22px;list-style:none;margin:0;padding:0}
+.foot a{text-decoration:none;color:var(--muted);font-size:.92rem}
+.foot a:hover{color:var(--fg)}
+.copy{margin-top:30px;color:#6f6a65;font-size:.82rem}
+
+@media (max-width:640px){
+  footer{padding-block:32px 104px}
+  .foot{gap:20px}
+  .foot img{height:28px}
+  .foot ul{gap:14px 18px}
+  .copy{margin-top:20px}
+}

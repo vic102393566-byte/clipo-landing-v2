@@ -1,0 +1,19 @@
+/* ==========================================================================
+   PROBLEMA
+   ========================================================================== */
+.pain-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
+.pain .icon-tile{color:var(--red);background:rgba(255,59,20,.1);border-color:rgba(255,59,20,.28)}
+.agita{
+  margin-top:34px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:28px;align-items:center;
+  padding:30px;border-radius:var(--r-lg);border:1px solid rgba(233,196,106,.28);
+  background:linear-gradient(120deg,rgba(255,122,26,.1),rgba(255,59,20,.04) 60%,transparent);
+}
+.agita p{font-size:clamp(1.02rem,1.6vw,1.2rem);max-width:66ch;color:#e4ded8}
+@media (max-width:1000px){.pain-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:700px){.pain-grid{grid-template-columns:1fr}.agita{grid-template-columns:1fr;padding:24px}}
+@media (max-width:640px){
+  .pain-grid{gap:12px}
+  .agita{margin-top:20px;padding:18px;gap:14px;border-radius:20px}
+  .agita p{font-size:.95rem}
+  .agita .btn{width:100%}
+}

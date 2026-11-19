@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Clipo — Crie, edite e publique</title>
+    <meta name="description" content="O Clipo transforma vídeos longos em cortes curtos, legendados e preparados para publicar nas redes sociais. Menos tempo editando, mais tempo criando." />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#060606" />
+    <!-- Troque pelo endereço final da página -->
+    <!-- <link rel="canonical" href="https://www.seudominio.com/" /> -->
+    <link rel="icon" type="image/webp" href="/favicon.webp" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Clipo — Crie, edite e publique" />
+    <meta property="og:description" content="Transforme vídeos longos em conteúdos curtos, legendados e prontos para as redes sociais." />
+    <meta property="og:locale" content="pt_BR" />
+    <!-- Adicione uma imagem 1200x630 em public/ e descomente:
+    <meta property="og:image" content="https://www.seudominio.com/og-image.png" /> -->
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+    />
+
+    <!-- Dados estruturados. Se mudar as perguntas em src/data/content.ts, atualize o FAQPage aqui também. -->
+    <script type="application/ld+json">
+      [
+        {"@context":"https://schema.org","@type":"SoftwareApplication","name":"Clipo","applicationCategory":"MultimediaApplication","operatingSystem":"Web","inLanguage":"pt-BR","description":"Plataforma de edição e distribuição inteligente de vídeos curtos para redes sociais."},
+        {"@context":"https://schema.org","@type":"FAQPage","inLanguage":"pt-BR","mainEntity":[
+          {"@type":"Question","name":"O que é o Clipo?","acceptedAnswer":{"@type":"Answer","text":"O Clipo é uma plataforma de edição e distribuição inteligente de vídeos curtos. Ela ajuda você a transformar vídeos longos em cortes legendados e preparados para publicação nas redes sociais."}},
+          {"@type":"Question","name":"Como funciona?","acceptedAnswer":{"@type":"Answer","text":"Você envia seu vídeo, o Clipo ajuda a encontrar os melhores momentos e gerar os cortes, adiciona legendas e deixa tudo preparado para publicar nas redes compatíveis."}},
+          {"@type":"Question","name":"Preciso saber editar vídeos?","acceptedAnswer":{"@type":"Answer","text":"Não. O fluxo foi pensado para quem está começando. Quem já edita também ganha tempo, porque deixa o trabalho repetitivo com a plataforma."}},
+          {"@type":"Question","name":"Quais redes sociais são compatíveis?","acceptedAnswer":{"@type":"Answer","text":"Os conteúdos são preparados no formato de vídeo curto das principais redes. A lista de redes com integração disponível é a que aparece na plataforma."}},
+          {"@type":"Question","name":"Como funcionam os planos?","acceptedAnswer":{"@type":"Answer","text":"Cada plano tem seus próprios recursos e limites, descritos antes da contratação. Escolha o que combina com o seu ritmo de publicação."}},
+          {"@type":"Question","name":"Posso cancelar minha assinatura?","acceptedAnswer":{"@type":"Answer","text":"As condições de cancelamento são apresentadas de forma clara antes da contratação, junto com as regras do plano escolhido."}}
+        ]}
+      ]
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

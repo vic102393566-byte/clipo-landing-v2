@@ -1,0 +1,15 @@
+/* ==========================================================================
+   PARA QUEM
+   ========================================================================== */
+.aud-grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:18px}
+.aud{grid-column:span 2}
+.aud:nth-child(4){grid-column:2 / span 2}
+.aud:nth-child(5){grid-column:4 / span 2}
+.aud .gain{display:inline-flex;align-items:center;gap:8px;margin-top:18px;font:600 .8rem var(--font-body);color:var(--gold);padding:7px 12px;border-radius:999px;border:1px solid rgba(233,196,106,.3);background:rgba(233,196,106,.06)}
+.aud .gain .ic{width:1em;height:1em}
+@media (max-width:980px){.aud-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.aud,.aud:nth-child(4),.aud:nth-child(5){grid-column:auto}.aud:last-child{grid-column:1/-1}}
+@media (max-width:640px){
+  .aud-grid{grid-template-columns:1fr;gap:12px}
+  .aud:last-child{grid-column:auto}
+  .aud .gain{margin-top:12px;font-size:.76rem;padding:5px 10px}
+}

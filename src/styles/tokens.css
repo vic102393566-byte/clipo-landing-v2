@@ -1,0 +1,30 @@
+/* ==========================================================================
+   CLIPO — Landing page de vendas
+   Conceito de layout: palco escuro (preto/grafite) com luz laranja vinda dos
+   cantos, como na arte da marca; cada seção é uma "cena" com um único foco.
+   Tokens abaixo. Para trocar cores/fontes, edite só este bloco.
+   ========================================================================== */
+:root{
+  color-scheme: dark;
+  /* Cor */
+  --bg:#060606;
+  --surface:#111113;
+  --surface-2:#18181b;
+  --line:#26262b;
+  --line-2:#34343a;
+  --fg:#f7f4f0;
+  --muted:#b0aaa4;
+  --orange:#ff7a1a;
+  --red:#ff3b14;
+  --yellow:#ffb400;
+  --gold:#e9c46a;
+  --ink:#160800;            /* texto sobre botão laranja */
+  --grad:linear-gradient(135deg,#ffb400 0%,#ff7a1a 48%,#ff3b14 100%);
+  --grad-btn:linear-gradient(135deg,#ffa81f 0%,#ff6a00 55%,#ff4a0f 100%);
+  /* Tipo */
+  --font-display:"Outfit","Avenir Next","Segoe UI",system-ui,sans-serif;
+  --font-body:"Plus Jakarta Sans","Segoe UI",system-ui,-apple-system,sans-serif;
+  /* Forma */
+  --r-sm:12px; --r-md:18px; --r-lg:26px;
+  --wrap:1180px;
+}
